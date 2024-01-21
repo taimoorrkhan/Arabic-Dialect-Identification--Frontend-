@@ -1,0 +1,58 @@
+# Android
+/build/
+/captures/
+.gradle/
+/local.properties
+
+# Cache
+/.idea/caches/
+/.idea/libraries/
+caches
+
+# Wrapper
+/gradle/wrapper/gradle-wrapper.jar
+/gradle/wrapper/gradle-wrapper.properties
+wrapper
+
+#daemon
+.gradle/daemon
+daemon
+
+
+#native
+native
+# User-specific files
+*.iml
+*.log
+*.properties
+
+
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+
+User
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+caches this my file
+
+
