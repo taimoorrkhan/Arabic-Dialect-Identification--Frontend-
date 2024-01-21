@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".FeedbackPage"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:background="#222943"
+        android:theme="@style/ToolBarStyle"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:textSize="24sp"
+        android:textColor="#0C0C0C"
+        android:textStyle="bold"
+        android:text="Your Feedback Matters!"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="#ABB0C4"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:text="Your thoughts help us understand what you like and what needs improving. It's like having a map to make sure the app helps you learn the different Arabic ways of speaking. Your feedback guides us to give you the best experience possible!"/>
+
+    <RatingBar
+        android:id="@+id/rating"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:progressTint="#222943"
+        android:layout_marginTop="15dp"
+        android:numStars="5" />
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@drawable/rounded_outlined"
+        android:layout_marginTop="15dp"
+        android:hint="Write your feedback here."
+        android:paddingStart="15dp"
+        android:paddingTop="15dp"
+        android:gravity="top|left"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    <Button
+        android:id="@+id/feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Give Feedback!"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/rounded_focused"
+        />
+
+</LinearLayout>

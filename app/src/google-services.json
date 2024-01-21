@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "488566935622",
+    "project_id": "arabic-dialect-identification",
+    "storage_bucket": "arabic-dialect-identification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:488566935622:android:fbf99b7ff6b30d8957fa47",
+        "android_client_info": {
+          "package_name": "com.example.arabicdialectidentificationproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfb1slfE-0Wsq9TxkDWK896GpcyJvmyzg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

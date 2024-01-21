@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEDED"
+    tools:context=".FilePicker">
+
+    <!--android:background="#F3F2F2"!-->
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_below="@id/separator"
+        android:id="@+id/myToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:background="#222943"
+        android:theme="@style/ToolBarStyle"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/audio_layout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/myToolbar"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:weightSum="10"
+        android:background="#222943"
+        android:layout_marginHorizontal="15dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:background="@drawable/baseline_audio_file_24"/>
+
+        <TextView
+            android:id="@+id/filename"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_height="0dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:text="Filename.wav"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/choose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/audio_layout"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round"
+        android:text="Choose File"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/pred"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choose"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Prediction"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pred"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Dialect Matching"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>
